@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.idol=/luci-static/idol
+	set luci.main.mediaurlbase=/luci-static/idol
+	commit luci
+EOF
+exit 0
